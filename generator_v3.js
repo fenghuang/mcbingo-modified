@@ -32,15 +32,15 @@ var generator_v3 = function(layout, difficulty, bingoList)
 			case 2:
 				amountOfVeryHard = 0;
 				amountOfHard = 0;
-				amountOfMedium = 0;
-				amountOfEasy = getRandomInt(15, 19);
+				amountOfMedium = getRandomInt(2, 6);
+				amountOfEasy = 25 - (amountOfMedium / 2);
 				break;
 
 			// Medium with some Easy
 			case 3:
 				amountOfVeryHard = 0;
 				amountOfHard = 0;
-				amountOfMedium = getRandomInt(15, 19);
+				amountOfMedium = getRandomInt(7, 12);
 				amountOfEasy = 25 - amountOfMedium;
 				break;
 
